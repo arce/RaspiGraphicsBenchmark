@@ -1,0 +1,1 @@
+chromium-browser GraphicsBenchRects.html --enable-precise-memory-info
