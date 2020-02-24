@@ -36,9 +36,8 @@ function draw()
   t[m] = time()
   if (m==10) then output() end
   background(255);
-  noFill()
   for i=0,n-1 do
-    stroke(c[i])
+    fill(c[i])
     rect(x[i],y[i],w[i],h[i])
   end
 end
@@ -46,7 +45,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("rects,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("fill rects,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end

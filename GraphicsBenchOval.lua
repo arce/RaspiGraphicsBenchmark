@@ -39,14 +39,14 @@ function draw()
   noFill()
   for i=0,n-1 do
     stroke(c[i])
-    rect(x[i],y[i],w[i],h[i])
+    ellipse(x[i],y[i],w[i],h[i])
   end
 end
 
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("rects,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("circles,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end
