@@ -53,7 +53,7 @@ function draw()
     background(255)
     for i=0,n-1 do
       stroke(c[i])
-      shape(s,x[i],y[i],w[i],h[i])
+      shape(s,x[i],y[i])
     end
   end
 end

@@ -3,44 +3,50 @@ int y1[];
 int x2[];
 int y2[];
 int c[];
-int n = 1000;
-int width = 1024;
-int height = 768;
-long time1;
-long time2;
+int n = 10000;
+int m = -1;
+int xr = 1920;
+int yr = 1080;
+long t[];
 
 void setup() {
+  size(1920,1080);
   if (args != null) {
-    n = int(args[1]);
+    n = int(args[0]);
   }
-  //size(1280,1024); // SXGA
-  // size(1024,768,P3D); // XGA
-  size(1024,768,P3D); // XGA
   x1 = new int[n];
   y1 = new int[n];
   x2 = new int[n];
   y2 = new int[n];
   c = new int[n];
+  t = new long[11];
   for (int i=0; i<n; i++) {
-    x1[i] = (int)(random(1)*width);
-    y1[i] = (int)(random(1)*height);
-    x2[i] = (int)(random(1)*height);
-    y2[i] = (int)(random(1)*height);
+    x1[i] = (int)(random(1)*xr);
+    y1[i] = (int)(random(1)*yr);
+    x2[i] = x1[i] + (int)(random(1)*xr)/10;
+    y2[i] = y1[i] + (int)(random(1)*yr)/10;
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
-  time1 = System.nanoTime();
 }
 
 void draw() {
-  background(255);
-  stroke(0);
-  fill(255);
-  long startTime = System.nanoTime();
-  for (int i=0; i<n; i++) {
-    stroke(c[i]);
-    line(x1[i],y1[i],x2[i],y2[i]);
+  m = m + 1;
+  if (m==10) output();
+  else {
+    t[m] = System.nanoTime();
+    background(255);
+    noFill();
+    for (int i=0; i<n; i++) {
+      stroke(c[i]);
+      line(x1[i],y1[i],x2[i],y2[i]);
+    }
   }
-  time2 = System.nanoTime();
-  println("n: "+n+",time: "+(time2-time1)/1000000000.0 + " seconds.");
-  time1 = time2;
+}
+
+void output() {
+  t[10] = System.nanoTime();
+  for (int i=0; i<9; i++) {
+    println("lines,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+  }
+  exit();
 }
