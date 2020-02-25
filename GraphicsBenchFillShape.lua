@@ -2,25 +2,45 @@ require "Array"
 
 local x
 local y
+local w
+local h
 local c
 local n = 1000
 local m = -1
-local l = 0
-local w = 1024
-local h = 768
+local l = 10
+local xr = 1920
+local yr = 1080
 local t
+local s
 
 function setup()
   size(xr,yr)
   if (args[1] ~= null) then
 	n = args[1]
   end
+  beginShape()
+  vertex(0, -50)
+  vertex(14, -20)
+  vertex(47, -15)
+  vertex(23, 7)
+  vertex(29, 40)
+  vertex(0, 25)
+  vertex(-29, 40)
+  vertex(-23, 7)
+  vertex(-47, -15)
+  vertex(-14, -20)
+  s = saveShape(CLOSE)
   x = Array()
   y = Array()
+  w = Array()
+  h = Array()
   c = Array()
+  t = Array()
   for i=0,n-1 do
-    x[i] = math.random()*w
-    y[i] = math.random()*h
+    x[i] = math.random()*xr
+    y[i] = math.random()*yr
+    w[i] = math.random()*xr/8
+    h[i] = math.random()*yr/8
     c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
   end
 end
@@ -28,12 +48,12 @@ end
 function draw()
   m = m + 1
   if (m==l) then output()
-  else 
+  else
     t[m] = time()
-    background(255);
+    background(255)
     for i=0,n-1 do
       fill(c[i])
-      rect(x[i],y[i],6,6)
+      shape(s,x[i],y[i])
     end
   end
 end
@@ -41,7 +61,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("arcs,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("shapes,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end

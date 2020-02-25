@@ -5,8 +5,9 @@ local y1
 local x2
 local y2
 local c
-local n = 10000
+local n = 1000
 local m = -1
+local l = 10
 local xr = 1920
 local yr = 1080
 local t
