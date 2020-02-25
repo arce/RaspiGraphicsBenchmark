@@ -15,6 +15,9 @@ local s
 
 function setup()
   size(xr,yr)
+  if (args[1] ~= null) then
+	n = args[1]
+  end
   beginShape()
   vertex(0, -50)
   vertex(14, -20)
@@ -27,12 +30,38 @@ function setup()
   vertex(-47, -15)
   vertex(-14, -20)
   s = saveShape(CLOSE)
+  x = Array()
+  y = Array()
+  w = Array()
+  h = Array()
+  c = Array()
+  t = Array()
+  for i=0,n-1 do
+    x[i] = math.random()*xr
+    y[i] = math.random()*yr
+    w[i] = math.random()*xr/8
+    h[i] = math.random()*yr/8
+    c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
+  end
 end
 
 function draw()
-  background(51)
-  fill(102)
-  stroke(255)
-  strokeWeight(2)
-  shape(s,100,100)
+  m = m + 1
+  if (m==l) then output()
+  else
+    t[m] = time()
+    background(255)
+    for i=0,n-1 do
+      stroke(c[i])
+      shape(s,x[i],y[i],w[i],h[i])
+    end
+  end
+end
+
+function output()
+  t[m] = time()
+  for i=0,m-1 do
+    print("shapes,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+  end
+  exit()
 end
