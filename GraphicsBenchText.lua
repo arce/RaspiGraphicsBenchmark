@@ -5,19 +5,20 @@ local y
 local w
 local h
 local c
-local n = 10000
+local n = 1000
 local m = -1
+local l = 10
 local xr = 1920
 local yr = 1080
 local t
 
 function setup()
   size(xr,yr)
-  local f = createFont("../bin/default.ttf", 12)
-  textFont(f)
   if (args[1] ~= null) then
 	n = args[1]
   end
+  local f = createFont("../bin/default.ttf", 12)
+  textFont(f)
   x = Array()
   y = Array()
   c = Array()
@@ -31,12 +32,14 @@ end
 
 function draw()
   m = m + 1
-  t[m] = time()
-  if (m==10) then output() end
-  background(255);
-  for i=0,n-1 do
-    fill(c[i])
-    text("ABCDEFGHIJK",x[i],y[i])
+  if (m==l) then output()
+  else
+    t[m] = time()
+    background(255)
+    for i=0,n-1 do
+      fill(c[i])
+      text("AbCdEfGhIjK",x[i],y[i])
+    end
   end
 end
 

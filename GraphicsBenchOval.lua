@@ -5,8 +5,9 @@ local y
 local w
 local h
 local c
-local n = 10000
+local n = 1000
 local m = -1
+local l = 10
 local xr = 1920
 local yr = 1080
 local t
@@ -33,13 +34,15 @@ end
 
 function draw()
   m = m + 1
-  t[m] = time()
-  if (m==10) then output() end
-  background(255);
-  noFill()
-  for i=0,n-1 do
-    stroke(c[i])
-    ellipse(x[i],y[i],w[i],h[i])
+  if (m==l) then output()
+  else
+    t[m] = time()
+    background(255);
+    noFill()
+    for i=0,n-1 do
+      stroke(c[i])
+      ellipse(x[i],y[i],w[i],h[i])
+    end
   end
 end
 

@@ -33,12 +33,14 @@ end
 
 function draw()
   m = m + 1
-  t[m] = time()
-  if (m==10) then output() end
-  background(255);
-  for i=0,n-1 do
-    stroke(c[i])
-    line(x1[i],y1[i],x2[i],y2[i])
+  if (m==l) then output()
+  else
+    t[m] = time()
+    background(255)
+    for i=0,n-1 do
+      stroke(c[i])
+      line(x1[i],y1[i],x2[i],y2[i])
+    end
   end
 end
 
