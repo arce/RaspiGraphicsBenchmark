@@ -12,7 +12,7 @@ long t[];
 void setup() {
   size(1920,1080);
   if (args != null) {
-    n = int(args[0]);
+	  n = int(args[0]);
   }
   x = new int[n];
   y = new int[n];
@@ -37,7 +37,7 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      stroke(c[i]);
+      fill(c[i]);
       ellipse(x[i],y[i],w[i],h[i]);
     }
   }
@@ -46,7 +46,7 @@ void draw() {
 void output() {
   t[10] = System.nanoTime();
   for (int i=0; i<9; i++) {
-    println("circles,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("fillOvals,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

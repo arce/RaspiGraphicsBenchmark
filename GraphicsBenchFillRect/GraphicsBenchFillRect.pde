@@ -1,9 +1,9 @@
-int x1[];
-int y1[];
-int x2[];
-int y2[];
+int x[];
+int y[];
+int w[];
+int h[];
 int c[];
-int n = 10000;
+int n = 1000;
 int m = -1;
 int xr = 1920;
 int yr = 1080;
@@ -14,17 +14,17 @@ void setup() {
   if (args != null) {
     n = int(args[0]);
   }
-  x1 = new int[n];
-  y1 = new int[n];
-  x2 = new int[n];
-  y2 = new int[n];
+  x = new int[n];
+  y = new int[n];
+  w = new int[n];
+  h = new int[n];
   c = new int[n];
   t = new long[11];
   for (int i=0; i<n; i++) {
-    x1[i] = (int)(random(1)*xr);
-    y1[i] = (int)(random(1)*yr);
-    x2[i] = x1[i] + (int)(random(1)*xr)/10;
-    y2[i] = y1[i] + (int)(random(1)*yr)/10;
+    x[i] = (int)(random(1)*xr);
+    y[i] = (int)(random(1)*yr);
+    w[i] = (int)(random(1)*xr)/8;
+    h[i] = (int)(random(1)*yr)/8;
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
 }
@@ -37,8 +37,8 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      stroke(c[i]);
-      line(x1[i],y1[i],x2[i],y2[i]);
+      fill(c[i]);
+      ellipse(x[i],y[i],w[i],h[i]);
     }
   }
 }
@@ -46,7 +46,7 @@ void draw() {
 void output() {
   t[10] = System.nanoTime();
   for (int i=0; i<9; i++) {
-    println("lines,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("fillRects,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

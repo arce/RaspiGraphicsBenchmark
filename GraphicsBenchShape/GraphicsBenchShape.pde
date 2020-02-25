@@ -37,8 +37,6 @@ void setup() {
   for (int i=0; i<n; i++) {
     x[i] = (int)(random(1)*xr);
     y[i] = (int)(random(1)*yr);
-    w[i] = (int)(random(10));
-    h[i] = (int)(random(10));
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
 }
@@ -51,7 +49,7 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      stroke(c[i]);
+      s.setStroke(c[i]);
       shape(s,x[i],y[i]);
     }
   }
@@ -60,7 +58,7 @@ void draw() {
 void output() {
   t[10] = System.nanoTime();
   for (int i=0; i<9; i++) {
-    println("circles,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("shapes,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

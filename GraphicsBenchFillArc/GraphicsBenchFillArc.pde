@@ -37,8 +37,8 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      stroke(c[i]);
-      ellipse(x[i],y[i],w[i],h[i]);
+      fill(c[i]);
+      arc(x[i],y[i],w[i],h[i],0,PI);
     }
   }
 }
@@ -46,7 +46,7 @@ void draw() {
 void output() {
   t[10] = System.nanoTime();
   for (int i=0; i<9; i++) {
-    println("ovals,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("fillArcs,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

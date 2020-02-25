@@ -40,7 +40,7 @@ function draw()
     background(255);
     for i=0,n-1 do
       stroke(c[i])
-      arc(x[i],y[i],w[i],h[i],0, PI/2.0)
+      arc(x[i],y[i],w[i],h[i],0, PI)
     end
   end
 end
