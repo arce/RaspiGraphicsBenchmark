@@ -5,6 +5,7 @@ int h[];
 int c[];
 int n = 1000;
 int m = -1;
+int l = 10;
 int xr = 1920;
 int yr = 1080;
 long t[];
@@ -43,7 +44,7 @@ void setup() {
 
 void draw() {
   m = m + 1;
-  if (m==10) output();
+  if (m==l) output();
   else {
     t[m] = System.nanoTime();
     background(255);
@@ -56,8 +57,8 @@ void draw() {
 }
 
 void output() {
-  t[10] = System.nanoTime();
-  for (int i=0; i<9; i++) {
+  t[m] = System.nanoTime();
+  for (int i=0; i<m; i++) {
     println("shapes,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();

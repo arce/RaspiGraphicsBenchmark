@@ -1,10 +1,92 @@
-rm salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 100 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 500 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 1000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 5000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 10000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 50000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 100000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 500000 >> salida.csv
-processing-java --sketch=/Users/armando/Desktop/Benchmark/GraphicsBench/GraphicsBenchCircles --run 1000000 >> salida.csv
+rm salida_proc.csv
+path="/Users/armando/Documents/GitHub/RaspiGraphicsBenchmark"
+
+processing-java --sketch=${path}/GraphicsBenchArc --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchArc --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillArc --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillOval --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillRect --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchFillShape --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchLine --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchLine --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchOval --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchOval --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchRect --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchRect --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchShape --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchShape --run 500000 >> salida_proc.csv
+
+processing-java --sketch=${path}/GraphicsBenchText --run 100 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 500 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 1000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 5000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 10000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 50000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 100000 >> salida_proc.csv
+processing-java --sketch=${path}/GraphicsBenchText --run 500000 >> salida_proc.csv
