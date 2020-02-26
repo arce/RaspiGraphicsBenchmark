@@ -17,7 +17,7 @@ function setup() {
   for (var i=0; i<n; i++) {
     x[i] = Math.random()*xr;
     y[i] = Math.random()*yr;
-    r[i] = Math.random()*xr/20;
+    r[i] = Math.random()*xr/20+10;
     c[i] = 'rgba('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
   }
 }
@@ -28,7 +28,7 @@ function draw() {
   else
     t[m] = Date.now();
     ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, xr,yr); 
+    ctx.fillRect(0, 0, xr,yr);
     for (var i=0; i<n; i++) {
 	  ctx.strokeStyle = c[i];
       ctx.beginPath();
@@ -39,8 +39,10 @@ function draw() {
 
 function output() {
 	t[m] = Date.now();
+	var data = "";
 	for (var i=0; i<m; i++) {
-	  console.log((t[i+1]-t[i]));
+	  data = data.concat("circles,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
     }
+    localStorage.setItem("GraphicsBench",data);
 	window.close();
 }

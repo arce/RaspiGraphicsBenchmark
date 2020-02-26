@@ -1,5 +1,5 @@
 
-echo "var n=100;" >> params.js
+echo "var n=1000;" >> params.js
 
 pathX="chromium-browser --start-fullscreen"
 

@@ -2,10 +2,9 @@ require "Array"
 
 local x
 local y
-local w
-local h
+local r
 local c
-local n = 1000
+local n = 10000
 local m = -1
 local l = 10
 local xr = 1920
@@ -19,15 +18,13 @@ function setup()
   end
   x = Array()
   y = Array()
-  w = Array()
-  h = Array()
+  r = Array()
   c = Array()
   t = Array()
   for i=0,n-1 do
     x[i] = math.random()*xr
     y[i] = math.random()*yr
-    w[i] = math.random()*xr/8
-    h[i] = math.random()*yr/8
+    r[i] = math.random()*xr/10
     c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
   end
 end
@@ -38,10 +35,9 @@ function draw()
   else
     t[m] = time()
     background(255);
-    noFill()
     for i=0,n-1 do
-      stroke(c[i])
-      ellipse(x[i],y[i],w[i],h[i])
+      fill(c[i])
+      ellipse(x[i],y[i],r[i],r[i])
     end
   end
 end
