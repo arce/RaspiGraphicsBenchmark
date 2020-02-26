@@ -1,7 +1,6 @@
 var x
 var y
 var c
-var n = 1000000
 var w = 1024
 var h = 768
 var start_time
