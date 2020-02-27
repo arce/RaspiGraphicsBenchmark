@@ -1,14 +1,29 @@
 var x;
 var y;
-var r;
+var w;
+var h;
 var c;
 var m = -1;
 var l = 10;
 var xr = 1920;
 var yr = 1080;
 var t;
+var s;
 
 function setup() {
+  s = Path2D();
+  s.beginShape();
+  s.moveTo(0, -50);
+  s.lineTo(14, -20);
+  s.lineTo(47, -15);
+  s.lineTo(23, 7);
+  s.lineTo(29, 40);
+  s.lineTo(0, 25);
+  s.lineTo(-29, 40);
+  s.lineTo(-23, 7);
+  s.lineTo(-47, -15);
+  s.lineTo(-14, -20);
+  s.closePath();
   x = new Array();
   y = new Array();
   r = new Array();
@@ -17,7 +32,8 @@ function setup() {
   for (var i=0; i<n; i++) {
     x[i] = Math.random()*xr;
     y[i] = Math.random()*yr;
-    r[i] = Math.random()*xr/10;
+    w[i] = Math.random()*xr/10;
+    h[i] = Math.random()*yr/10;
     c[i] = 'rgba('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
   }
 }
@@ -30,10 +46,11 @@ function draw() {
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, xr,yr);
     for (var i=0; i<n; i++) {
-	  ctx.strokeStyle = c[i];
-      ctx.beginPath();
-      ctx.arc(x[i],y[i],r[i],0,2*Math.PI,true);
-      ctx.stroke();
+	  ctx.fillStyle = c[i];
+	  ctx.save();
+	  ctx.translate(x[i],y[i]);
+      ctx.stroke(s);
+      ctx.restore();
     }
   }
 }
@@ -42,8 +59,8 @@ function output() {
 	t[m] = Date.now();
 	var data = "";
 	for (var i=0; i<m; i++) {
-	  data = data.concat("circles,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
+	  data = data.concat("shape,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
     }
-    localStorage.setItem("GraphicsBenchCircle-"+n,data);
+    localStorage.setItem("GraphicsBenchShape-"+n,data);
 	window.close();
 }

@@ -2,8 +2,7 @@ require "Array"
 
 local x
 local y
-local w
-local h
+local r
 local c
 local n = 1000
 local m = -1
@@ -26,8 +25,7 @@ function setup()
   for i=0,n-1 do
     x[i] = math.random()*xr
     y[i] = math.random()*yr
-    w[i] = math.random()*xr/8
-    h[i] = math.random()*yr/8
+    r[i] = math.random()*xr/10
     c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
   end
 end
@@ -40,7 +38,7 @@ function draw()
     background(255)
     for i=0,n-1 do
       fill(c[i])
-      arc(x[i],y[i],w[i],h[i],0, PI)
+      arc(x[i],y[i],r[i],r[i],0, PI)
     end
   end
 end

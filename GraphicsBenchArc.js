@@ -32,7 +32,7 @@ function draw() {
     for (var i=0; i<n; i++) {
 	  ctx.strokeStyle = c[i];
       ctx.beginPath();
-      ctx.arc(x[i],y[i],r[i],0,2*Math.PI,true);
+      ctx.arc(x[i],y[i],r[i],0,Math.PI,true);
       ctx.stroke();
     }
   }
@@ -41,9 +41,12 @@ function draw() {
 function output() {
 	t[m] = Date.now();
 	var data = "";
+	var mem = 0;
+	if (performance.memory != null)
+	  mem = performance.memory.usedJSHeapSize;
 	for (var i=0; i<m; i++) {
-	  data = data.concat("circles,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
+	  data = data.concat("arcs,"+n+","+(t[i+1]-t[i])+","+mem+"\n");
     }
-    localStorage.setItem("GraphicsBenchCircle-"+n,data);
+    localStorage.setItem("GraphicsBench"+n+"Arc",data);
 	window.close();
 }

@@ -1,6 +1,7 @@
 var x;
 var y;
-var r;
+var w;
+var h;
 var c;
 var m = -1;
 var l = 10;
@@ -8,7 +9,7 @@ var xr = 1920;
 var yr = 1080;
 var t;
 
-function setup() {
+function setup() {;
   x = new Array();
   y = new Array();
   r = new Array();
@@ -17,7 +18,6 @@ function setup() {
   for (var i=0; i<n; i++) {
     x[i] = Math.random()*xr;
     y[i] = Math.random()*yr;
-    r[i] = Math.random()*xr/10;
     c[i] = 'rgba('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
   }
 }
@@ -28,13 +28,11 @@ function draw() {
   else {
     t[m] = Date.now();
     ctx.fillStyle = "white";
-    ctx.fillRect(0, 0, xr,yr);
+    ctx.fillRect(0, 0, xr, yr);
     for (var i=0; i<n; i++) {
-	  ctx.strokeStyle = c[i];
-      ctx.beginPath();
-      ctx.arc(x[i],y[i],r[i],0,2*Math.PI,true);
-      ctx.stroke();
-    }
+	  ctx.fillStyle = c[i];
+	  ctx.fillText("Hello World",x[i],y[i]);
+	}
   }
 }
 
@@ -42,8 +40,8 @@ function output() {
 	t[m] = Date.now();
 	var data = "";
 	for (var i=0; i<m; i++) {
-	  data = data.concat("circles,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
+	  data = data.concat("texts,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
     }
-    localStorage.setItem("GraphicsBenchCircle-"+n,data);
+    localStorage.setItem("GraphicsBenchText-"+n,data);
 	window.close();
 }

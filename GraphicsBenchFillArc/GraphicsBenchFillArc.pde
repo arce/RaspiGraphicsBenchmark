@@ -1,7 +1,6 @@
 int x[];
 int y[];
-int w[];
-int h[];
+int r[];
 int c[];
 int n = 1000;
 int m = -1;
@@ -24,8 +23,7 @@ void setup() {
   for (int i=0; i<n; i++) {
     x[i] = (int)(random(1)*xr);
     y[i] = (int)(random(1)*yr);
-    w[i] = (int)(random(1)*xr)/8;
-    h[i] = (int)(random(1)*yr)/8;
+    r[i] = (int)(random(1)*xr)/10;
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
 }
@@ -39,7 +37,7 @@ void draw() {
     noFill();
     for (int i=0; i<n; i++) {
       fill(c[i]);
-      arc(x[i],y[i],w[i],h[i],0,PI);
+      arc(x[i],y[i],r[i],r[i],0,PI);
     }
   }
 }
