@@ -43,10 +43,10 @@ function output() {
 	var data = "";
 	var mem = 0;
 	if (performance.memory != null)
-	  mem = performance.memory.usedJSHeapSize;
+	  mem = performance.memory.usedJSHeapSize/1000;
 	for (var i=0; i<m; i++) {
 	  data = data.concat("arcs,"+n+","+(t[i+1]-t[i])+","+mem+"\n");
     }
-    localStorage.setItem("GraphicsBench"+n+"Arc",data);
+    localStorage.setItem("GraphicsBenchArc-"+n,data);
 	window.close();
 }
