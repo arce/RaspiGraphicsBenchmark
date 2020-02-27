@@ -18,8 +18,7 @@ function setup()
   end
   x = Array()
   y = Array()
-  w = Array()
-  h = Array()
+  r = Array()
   c = Array()
   t = Array()
   for i=0,n-1 do
