@@ -1,6 +1,6 @@
 set -e
 
-path="chromium-browser --start-fullscreen --enable-precise-memory-info --disable-application-cache"
+path="chromium-browser --disable-timeouts-for-profiling --start-fullscreen --enable-precise-memory-info --disable-application-cache"
 
 pathX="open -a Safari"
 

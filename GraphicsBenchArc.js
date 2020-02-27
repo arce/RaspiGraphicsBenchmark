@@ -17,7 +17,7 @@ function setup() {
   for (var i=0; i<n; i++) {
     x[i] = Math.random()*xr;
     y[i] = Math.random()*yr;
-    r[i] = Math.random()*xr/10;
+    r[i] = Math.random()*xr/20;
     c[i] = 'rgba('+Math.random()*255+','+Math.random()*255+','+Math.random()*255+')';
   }
 }
