@@ -9,6 +9,15 @@ rm salida_lua.csv
 ../bin/Diököl GraphicsBenchArc.lua 100000 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchArc.lua 500000 >> salida_lua.csv
 
+../bin/Diököl GraphicsBenchCircle.lua 100 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 500 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 1000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 5000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 10000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 50000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 100000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchCircle.lua 500000 >> salida_lua.csv
+
 ../bin/Diököl GraphicsBenchFillArc.lua 100 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillArc.lua 500 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillArc.lua 1000 >> salida_lua.csv
@@ -18,14 +27,14 @@ rm salida_lua.csv
 ../bin/Diököl GraphicsBenchFillArc.lua 100000 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillArc.lua 500000 >> salida_lua.csv
 
-../bin/Diököl GraphicsBenchFillOval.lua 100 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 500 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 1000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 5000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 10000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 50000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 100000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchFillOval.lua 500000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 100 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 500 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 1000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 5000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 10000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 50000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 100000 >> salida_lua.csv
+../bin/Diököl GraphicsBenchFillCircle.lua 500000 >> salida_lua.csv
 
 ../bin/Diököl GraphicsBenchFillRect.lua 100 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillRect.lua 500 >> salida_lua.csv
@@ -53,15 +62,6 @@ rm salida_lua.csv
 ../bin/Diököl GraphicsBenchLine.lua 50000 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchLine.lua 100000 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchLine.lua 500000 >> salida_lua.csv
-
-../bin/Diököl GraphicsBenchOval.lua 100 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 500 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 1000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 5000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 10000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 50000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 100000 >> salida_lua.csv
-../bin/Diököl GraphicsBenchOval.lua 500000 >> salida_lua.csv
 
 ../bin/Diököl GraphicsBenchRect.lua 100 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchRect.lua 500 >> salida_lua.csv

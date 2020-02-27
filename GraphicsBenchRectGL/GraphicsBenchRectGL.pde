@@ -17,11 +17,15 @@ void setup() {
   }
   x = new int[n];
   y = new int[n];
+  w = new int[n];
+  h = new int[n];
   c = new int[n];
   t = new long[11];
   for (int i=0; i<n; i++) {
     x[i] = (int)(random(1)*xr);
     y[i] = (int)(random(1)*yr);
+    w[i] = (int)(random(1)*xr)/10;
+    h[i] = (int)(random(1)*yr)/10;
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
 }
@@ -34,8 +38,8 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      fill(c[i]);
-      text("Hello World",x[i],y[i]);
+      stroke(c[i]);
+      rect(x[i],y[i],w[i],h[i]);
     }
   }
 }
@@ -43,7 +47,7 @@ void draw() {
 void output() {
   t[m] = System.nanoTime();
   for (int i=0; i<m; i++) {
-    println("texts,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("rects,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

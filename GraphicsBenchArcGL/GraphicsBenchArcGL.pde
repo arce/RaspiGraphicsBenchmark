@@ -1,7 +1,6 @@
 int x[];
 int y[];
-int w[];
-int h[];
+int r[];
 int c[];
 int n = 1000;
 int m = -1;
@@ -13,15 +12,18 @@ long t[];
 void setup() {
   size(1920,1080);
   if (args != null) {
-    n = int(args[0]);
+	  n = int(args[0]);
   }
   x = new int[n];
   y = new int[n];
+  w = new int[n];
+  h = new int[n];
   c = new int[n];
   t = new long[11];
   for (int i=0; i<n; i++) {
     x[i] = (int)(random(1)*xr);
     y[i] = (int)(random(1)*yr);
+    r[i] = (int)(random(1)*xr)/10;
     c[i] = color(random(1)*255,random(1)*255,random(1)*255);
   }
 }
@@ -34,8 +36,8 @@ void draw() {
     background(255);
     noFill();
     for (int i=0; i<n; i++) {
-      fill(c[i]);
-      text("Hello World",x[i],y[i]);
+      stroke(c[i]);
+      arc(x[i],y[i],r[i],r[i],0,PI);
     }
   }
 }
@@ -43,7 +45,7 @@ void draw() {
 void output() {
   t[m] = System.nanoTime();
   for (int i=0; i<m; i++) {
-    println("texts,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
+    println("arcs,"+n+","+(t[i+1]-t[i])*0.000001+","+(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())/1024);
   }
   exit();
 }

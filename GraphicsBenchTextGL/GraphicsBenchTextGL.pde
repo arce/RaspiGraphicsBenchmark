@@ -35,7 +35,7 @@ void draw() {
     noFill();
     for (int i=0; i<n; i++) {
       fill(c[i]);
-      text("Hello World",x[i],y[i]);
+      text("Hello Word",x[i],y[i]);
     }
   }
 }
