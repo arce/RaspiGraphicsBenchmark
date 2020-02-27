@@ -58,9 +58,12 @@ function draw() {
 function output() {
 	t[m] = Date.now();
 	var data = "";
+	var mem = 0;
+	if (performance.memory != null)
+	  mem = performance.memory.usedJSHeapSize/1000;
 	for (var i=0; i<m; i++) {
-	  data = data.concat("fillCircle,"+n+","+(t[i+1]-t[i])+","+performance.memory.usedJSHeapSize+"\n");
+	  data = data.concat("fillShapes,"+n+","+(t[i+1]-t[i])+","+mem+"\n");
     }
-    localStorage.setItem("GraphicsBenchFillCircle-"+n,data);
+    localStorage.setItem("GraphicsBenchFillShape-"+n,data);
 	window.close();
 }
