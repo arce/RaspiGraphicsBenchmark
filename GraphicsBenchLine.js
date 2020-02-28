@@ -8,22 +8,8 @@ var l = 10;
 var xr = 1920;
 var yr = 1080;
 var t;
-var s;
 
 function setup() {
-  s = Path2D();
-  s.beginShape();
-  s.moveTo(0, -50);
-  s.lineTo(14, -20);
-  s.lineTo(47, -15);
-  s.lineTo(23, 7);
-  s.lineTo(29, 40);
-  s.lineTo(0, 25);
-  s.lineTo(-29, 40);
-  s.lineTo(-23, 7);
-  s.lineTo(-47, -15);
-  s.lineTo(-14, -20);
-  s.closePath();
   x1 = new Array();
   y1 = new Array();
   x2 = new Array();
