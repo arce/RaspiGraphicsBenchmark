@@ -30,8 +30,8 @@ function draw() {
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, xr,yr);
     for (var i=0; i<n; i++) {
-	  ctx.fillStyle = c[i];
       ctx.beginPath();
+      ctx.fillStyle = c[i];
       ctx.arc(x[i],y[i],r[i],0,Math.PI,true);
       ctx.fill();
     }

@@ -32,8 +32,8 @@ function draw() {
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, xr,yr);
     for (var i=0; i<n; i++) {
+	  ctx.beginPath();
 	  ctx.fillStyle = c[i];
-      ctx.beginPath();
       ctx.rect(x[i],y[i],w[i],h[i]);
       ctx.fill();
     }

@@ -27,13 +27,13 @@ function setup() {
 function draw() {
   m = m + 1;
   if (m==l) output();
-  else
+  else {
     t[m] = Date.now();
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, xr,yr);
     for (var i=0; i<n; i++) {
-	  ctx.strokeStyle = c[i];
 	  ctx.beginPath();
+	  ctx.strokeStyle = c[i];
 	  ctx.rect(x[i],y[i],w[i],h[i]);
       ctx.stroke();
     }
