@@ -12,7 +12,8 @@ var t;
 function setup() {
   x = new Array();
   y = new Array();
-  r = new Array();
+  w = new Array();
+  h = new Array();
   c = new Array();
   t = new Array();
   for (var i=0; i<n; i++) {
