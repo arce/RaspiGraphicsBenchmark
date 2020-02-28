@@ -12,7 +12,6 @@ var s;
 
 function setup() {
   s = new Path2D();
-  s.beginShape();
   s.moveTo(0, -50);
   s.lineTo(14, -20);
   s.lineTo(47, -15);
