@@ -16,8 +16,7 @@ void setup() {
   }
   x = new int[n];
   y = new int[n];
-  w = new int[n];
-  h = new int[n];
+  r = new int[n];
   c = new int[n];
   t = new long[11];
   for (int i=0; i<n; i++) {
