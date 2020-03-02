@@ -1,5 +1,5 @@
-#set -e
-set -o pipefail
+set -e
+#set -o pipefail
 
 path="chromium-browser --disable-timeouts-for-profiling --start-fullscreen --enable-precise-memory-info --disable-application-cache"
 
@@ -7,13 +7,13 @@ pathX="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-
 
 cp GraphicsBenchArc.js GraphicsBench.js &&
 echo "var n=100;" > params.js &&
-"$path" GraphicsBench.html &&
+${path} GraphicsBench.html &&
 echo "var n=500;" > params.js &&
-"$path" GraphicsBench.html &&
+${path} GraphicsBench.html &&
 echo "var n=1000;" > params.js &&
-"$path" GraphicsBench.html &&
+${path} GraphicsBench.html &&
 echo "var n=5000;" > params.js &&
-"$path" GraphicsBench.html &&
+${path} GraphicsBench.html &&
 echo "var n=10000;" > params.js &&
 ${path} GraphicsBench.html &&
 echo "var n=50000;" > params.js &&
