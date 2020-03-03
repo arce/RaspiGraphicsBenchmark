@@ -14,6 +14,7 @@ function setup() {
   y = new Array();
   w = new Array();
   h = new Array();
+  c = new Array();
   t = new Array();
   for (var i=0; i<n; i++) {
     x[i] = Math.random()*xr;
