@@ -26,8 +26,8 @@ function setup()
   for i=0,n-1 do
     x[i] = math.random()*xr
     y[i] = math.random()*yr
-    w[i] = math.random()*xr/8
-    h[i] = math.random()*yr/8
+    w[i] = math.random()*xr/10
+    h[i] = math.random()*yr/10
     c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
   end
 end
@@ -37,7 +37,7 @@ function draw()
   if (m==l) then output()
   else
     t[m] = time()
-    background(255);
+    background(255)
     noFill()
     for i=0,n-1 do
       stroke(c[i])

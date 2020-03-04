@@ -38,7 +38,7 @@ function draw()
     background(255)
     for i=0,n-1 do
       fill(c[i])
-      text("AbCdEfGhIjK",x[i],y[i])
+      text("Hello World",x[i],y[i])
     end
   end
 end

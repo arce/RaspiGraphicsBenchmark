@@ -48,7 +48,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("fill rects,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("fillRects,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end

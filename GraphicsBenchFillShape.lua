@@ -39,8 +39,8 @@ function setup()
   for i=0,n-1 do
     x[i] = math.random()*xr
     y[i] = math.random()*yr
-    w[i] = math.random()*xr/8
-    h[i] = math.random()*yr/8
+    w[i] = math.random()*xr/10
+    h[i] = math.random()*yr/10
     c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
   end
 end
@@ -61,7 +61,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("shapes,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("fillShapes,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end

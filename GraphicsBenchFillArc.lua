@@ -45,7 +45,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("arcs,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("fillArcs,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end

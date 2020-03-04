@@ -45,7 +45,7 @@ end
 function output()
   t[m] = time()
   for i=0,m-1 do
-    print("circles,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
+    print("fillCircles,"..n..","..(t[i+1]-t[i])..","..collectgarbage("count"))
   end
   exit()
 end
