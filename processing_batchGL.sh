@@ -1,4 +1,5 @@
 rm salida_procGL.csv
+pathX="/home/pi/Desktop/RaspiGraphicsBenchmark-master"
 path="/Users/armando/Documents/GitHub/RaspiGraphicsBenchmark"
 
 processing-java --sketch=${path}/GraphicsBenchArcGL --run 100 >> salida_procGL.csv
