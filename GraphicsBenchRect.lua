@@ -39,7 +39,7 @@ function draw()
   if (m==l) then output()
   else
     t[m] = time()
-    background(128)
+    background(255)
     noFill()
     for i=0,n-1 do
       stroke(c[i])
