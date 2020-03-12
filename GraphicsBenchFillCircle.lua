@@ -10,6 +10,8 @@ local l = 10
 local xr = 1920
 local yr = 1080
 local t
+local colors = {0xa6cee3ff,0x1f78b4ff,0xb2df8aff,0x33a02cff,0xfb9a99ff,0xe31a1cff,
+                0xfdbf6fff,0xff7f00ff,0xcab2d6ff,0x6a3d9aff,0xffff99ff,0xb15928ff}
 
 function setup()
   size(xr,yr)
@@ -25,7 +27,7 @@ function setup()
     x[i] = math.random()*xr
     y[i] = math.random()*yr
     r[i] = math.random()*xr/10
-    c[i] = color(math.random()*255,math.random()*255,math.random()*255,0)
+    c[i] = colors[math.random(1,12)]
   end
 end
 

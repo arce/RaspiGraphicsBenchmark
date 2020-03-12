@@ -1,10 +1,135 @@
-fillRects,100000,969,5177.1474609375
-fillRects,100000,789,5177.26171875
-fillRects,100000,778,5177.3115234375
-fillRects,100000,799,5177.36328125
-fillRects,100000,783,5177.4130859375
-fillRects,100000,784,5177.46484375
-fillRects,100000,783,5177.5146484375
-fillRects,100000,784,5177.150390625
-fillRects,100000,797,5177.0361328125
-fillRects,100000,786,5176.8671875
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
+
+
+FATAL ERROR:
+  Error running script
+: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
+
