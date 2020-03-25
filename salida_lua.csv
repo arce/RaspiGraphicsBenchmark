@@ -1,135 +1,300 @@
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillArc.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillCircle.lua:38: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillRect.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchFillShape.lua:54: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchLine.lua:41: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchRect.lua:42: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
-
-
-FATAL ERROR:
-  Error running script
-: GraphicsBenchShape.lua:54: attempt to call global 'time' (a nil value)
-
+arcs,100,96,61.00390625
+arcs,100,16,60.9326171875
+arcs,100,17,57.5498046875
+arcs,100,17,57.3095703125
+arcs,100,15,57.3193359375
+arcs,100,19,57.3603515625
+arcs,100,15,57.4013671875
+arcs,100,17,57.4423828125
+arcs,100,18,57.4833984375
+arcs,100,17,57.5244140625
+arcs,500,90,73.00390625
+arcs,500,16,72.9326171875
+arcs,500,16,69.5498046875
+arcs,500,17,69.3095703125
+arcs,500,16,69.3193359375
+arcs,500,18,69.3603515625
+arcs,500,15,69.4013671875
+arcs,500,18,69.4423828125
+arcs,500,16,69.4833984375
+arcs,500,17,69.5244140625
+arcs,1000,92,89.00390625
+arcs,1000,15,88.93359375
+arcs,1000,20,85.5498046875
+arcs,1000,14,85.310546875
+arcs,1000,18,85.3203125
+arcs,1000,17,85.359375
+arcs,1000,15,85.3974609375
+arcs,1000,17,85.439453125
+arcs,1000,19,85.48046875
+arcs,1000,14,85.5205078125
+circles,100,119,61.58203125
+circles,100,33,61.5146484375
+circles,100,32,58.134765625
+circles,100,35,57.896484375
+circles,100,33,57.908203125
+circles,100,33,57.951171875
+circles,100,34,57.994140625
+circles,100,36,58.037109375
+circles,100,30,58.080078125
+circles,100,34,58.123046875
+circles,500,124,73.58203125
+circles,500,33,73.5146484375
+circles,500,33,70.134765625
+circles,500,33,69.896484375
+circles,500,50,69.908203125
+circles,500,34,69.951171875
+circles,500,33,69.994140625
+circles,500,51,70.037109375
+circles,500,32,70.080078125
+circles,500,34,70.123046875
+circles,1000,133,89.58203125
+circles,1000,50,89.515625
+circles,1000,32,86.1328125
+circles,1000,51,85.8935546875
+circles,1000,32,85.9072265625
+circles,1000,34,85.9521484375
+circles,1000,40,85.9970703125
+circles,1000,44,86.0419921875
+circles,1000,33,86.0869140625
+circles,1000,33,86.1318359375
+fillArcs,100,119,61.638671875
+fillArcs,100,33,61.5732421875
+fillArcs,100,33,58.1943359375
+fillArcs,100,33,57.9580078125
+fillArcs,100,33,57.9716796875
+fillArcs,100,34,58.0166015625
+fillArcs,100,33,58.0615234375
+fillArcs,100,37,58.1064453125
+fillArcs,100,31,58.1513671875
+fillArcs,100,33,58.1962890625
+fillArcs,500,124,73.638671875
+fillArcs,500,33,73.5732421875
+fillArcs,500,50,70.1943359375
+fillArcs,500,34,69.9580078125
+fillArcs,500,49,69.9716796875
+fillArcs,500,34,70.0166015625
+fillArcs,500,49,70.0615234375
+fillArcs,500,34,70.1064453125
+fillArcs,500,33,70.1513671875
+fillArcs,500,34,70.1962890625
+fillArcs,1000,124,89.638671875
+fillArcs,1000,49,89.57421875
+fillArcs,1000,50,86.1943359375
+fillArcs,1000,51,85.958984375
+fillArcs,1000,50,85.97265625
+fillArcs,1000,50,86.0166015625
+fillArcs,1000,32,86.0625
+fillArcs,1000,34,86.1025390625
+fillArcs,1000,33,86.1484375
+fillArcs,1000,34,86.19140625
+fillCircles,100,119,61.580078125
+fillCircles,100,34,61.517578125
+fillCircles,100,33,58.140625
+fillCircles,100,32,57.9033203125
+fillCircles,100,35,57.919921875
+fillCircles,100,33,57.966796875
+fillCircles,100,33,58.013671875
+fillCircles,100,35,58.060546875
+fillCircles,100,32,58.107421875
+fillCircles,100,34,58.154296875
+fillCircles,500,125,73.580078125
+fillCircles,500,50,73.517578125
+fillCircles,500,50,70.140625
+fillCircles,500,50,69.9033203125
+fillCircles,500,50,69.919921875
+fillCircles,500,49,69.966796875
+fillCircles,500,33,70.013671875
+fillCircles,500,34,70.060546875
+fillCircles,500,33,70.107421875
+fillCircles,500,33,70.154296875
+fillCircles,1000,126,89.580078125
+fillCircles,1000,50,89.5185546875
+fillCircles,1000,51,86.1435546875
+fillCircles,1000,50,85.9111328125
+fillCircles,1000,50,85.9287109375
+fillCircles,1000,52,85.9775390625
+fillCircles,1000,48,86.0263671875
+fillCircles,1000,50,86.0751953125
+fillCircles,1000,50,86.1240234375
+fillCircles,1000,50,86.1728515625
+fillRects,100,113,63.404296875
+fillRects,100,34,60.0712890625
+fillRects,100,32,59.8359375
+fillRects,100,34,59.84765625
+fillRects,100,33,59.8916015625
+fillRects,100,34,59.9375
+fillRects,100,32,59.9775390625
+fillRects,100,38,60.0234375
+fillRects,100,30,60.06640625
+fillRects,100,32,60.1103515625
+fillRects,500,123,78.404296875
+fillRects,500,33,75.0712890625
+fillRects,500,34,74.8359375
+fillRects,500,33,74.84765625
+fillRects,500,34,74.8916015625
+fillRects,500,33,74.9375
+fillRects,500,33,74.9775390625
+fillRects,500,35,75.0234375
+fillRects,500,32,75.06640625
+fillRects,500,33,75.1103515625
+fillRects,1000,123,98.404296875
+fillRects,1000,36,95.072265625
+fillRects,1000,32,94.8369140625
+fillRects,1000,34,94.8525390625
+fillRects,1000,33,94.8994140625
+fillRects,1000,33,94.9462890625
+fillRects,1000,33,94.9931640625
+fillRects,1000,38,95.0400390625
+fillRects,1000,29,95.0869140625
+fillRects,1000,33,95.1337890625
+fillShapes,100,93,61.345703125
+fillShapes,100,17,61.2041015625
+fillShapes,100,17,61.1884765625
+fillShapes,100,16,61.2353515625
+fillShapes,100,17,61.2822265625
+fillShapes,100,17,61.3291015625
+fillShapes,100,16,61.3759765625
+fillShapes,100,17,61.4228515625
+fillShapes,100,17,61.4697265625
+fillShapes,100,16,61.5166015625
+fillShapes,500,88,76.345703125
+fillShapes,500,18,76.2666015625
+fillShapes,500,16,76.1884765625
+fillShapes,500,16,76.2353515625
+fillShapes,500,18,76.2822265625
+fillShapes,500,17,76.3291015625
+fillShapes,500,16,76.3759765625
+fillShapes,500,17,76.4228515625
+fillShapes,500,16,76.4697265625
+fillShapes,500,16,76.5166015625
+fillShapes,1000,93,96.345703125
+fillShapes,1000,17,96.267578125
+fillShapes,1000,16,96.189453125
+fillShapes,1000,17,96.236328125
+fillShapes,1000,17,96.283203125
+fillShapes,1000,16,96.330078125
+fillShapes,1000,17,96.376953125
+fillShapes,1000,17,96.423828125
+fillShapes,1000,16,96.470703125
+fillShapes,1000,17,96.517578125
+lines,100,123,63.900390625
+lines,100,33,60.5810546875
+lines,100,33,60.341796875
+lines,100,34,60.3515625
+lines,100,33,60.390625
+lines,100,33,60.4287109375
+lines,100,34,60.470703125
+lines,100,37,60.51171875
+lines,100,30,60.5517578125
+lines,100,33,60.59375
+lines,500,121,78.900390625
+lines,500,33,75.5810546875
+lines,500,32,75.341796875
+lines,500,37,75.3515625
+lines,500,30,75.390625
+lines,500,34,75.4287109375
+lines,500,33,75.470703125
+lines,500,35,75.51171875
+lines,500,33,75.5517578125
+lines,500,33,75.59375
+lines,1000,117,98.900390625
+lines,1000,32,95.58203125
+lines,1000,34,95.341796875
+lines,1000,33,95.3525390625
+lines,1000,33,95.3955078125
+lines,1000,34,95.4384765625
+lines,1000,33,95.4814453125
+lines,1000,36,95.5244140625
+lines,1000,31,95.5673828125
+lines,1000,33,95.6103515625
+rects,100,116,63.40625
+rects,100,34,60.0654296875
+rects,100,32,59.826171875
+rects,100,33,59.8359375
+rects,100,35,59.875
+rects,100,32,59.91015625
+rects,100,33,59.9501953125
+rects,100,38,59.9921875
+rects,100,30,60.03125
+rects,100,33,60.068359375
+rects,500,123,78.40625
+rects,500,33,75.0654296875
+rects,500,33,74.826171875
+rects,500,34,74.8359375
+rects,500,33,74.875
+rects,500,33,74.91015625
+rects,500,33,74.9501953125
+rects,500,36,74.9921875
+rects,500,31,75.03125
+rects,500,34,75.068359375
+rects,1000,126,98.40625
+rects,1000,33,95.06640625
+rects,1000,33,94.826171875
+rects,1000,34,94.8369140625
+rects,1000,33,94.8798828125
+rects,1000,33,94.9228515625
+rects,1000,34,94.9658203125
+rects,1000,38,95.0087890625
+rects,1000,28,95.0517578125
+rects,1000,34,95.0947265625
+shapes,100,88,61.337890625
+shapes,100,19,61.2548828125
+shapes,100,15,61.1728515625
+shapes,100,16,61.2158203125
+shapes,100,17,61.2587890625
+shapes,100,16,61.3017578125
+shapes,100,17,61.3447265625
+shapes,100,17,61.3876953125
+shapes,100,17,61.4306640625
+shapes,100,16,61.4736328125
+shapes,500,96,76.337890625
+shapes,500,16,76.2548828125
+shapes,500,17,76.1728515625
+shapes,500,17,76.2158203125
+shapes,500,17,76.2587890625
+shapes,500,17,76.3017578125
+shapes,500,17,76.3447265625
+shapes,500,16,76.3876953125
+shapes,500,17,76.4306640625
+shapes,500,17,76.4736328125
+shapes,1000,96,96.337890625
+shapes,1000,16,96.193359375
+shapes,1000,16,96.173828125
+shapes,1000,17,96.216796875
+shapes,1000,17,96.259765625
+shapes,1000,16,96.302734375
+shapes,1000,17,96.345703125
+shapes,1000,17,96.388671875
+shapes,1000,16,96.431640625
+shapes,1000,17,96.474609375
+texts,100,94,57.2236328125
+texts,100,16,57.1552734375
+texts,100,16,53.755859375
+texts,100,17,53.546875
+texts,100,17,53.5224609375
+texts,100,17,53.564453125
+texts,100,17,53.60546875
+texts,100,16,53.6455078125
+texts,100,18,53.6875
+texts,100,15,53.7236328125
+texts,500,94,66.5673828125
+texts,500,18,66.4990234375
+texts,500,16,63.099609375
+texts,500,17,62.890625
+texts,500,17,62.8662109375
+texts,500,16,62.908203125
+texts,500,16,62.94921875
+texts,500,18,62.9892578125
+texts,500,15,63.03125
+texts,500,18,63.068359375
+texts,1000,90,78.5673828125
+texts,1000,15,78.5
+texts,1000,18,75.0927734375
+texts,1000,17,74.8857421875
+texts,1000,16,74.8662109375
+texts,1000,17,74.9091796875
+texts,1000,17,74.9521484375
+texts,1000,16,74.9951171875
+texts,1000,17,75.0380859375
+texts,1000,17,75.0810546875
