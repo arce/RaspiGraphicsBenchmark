@@ -36,6 +36,7 @@ function draw()
   else
     t[m] = time()
     background(255)
+    noStroke()
     for i=0,n-1 do
       fill(c[i])
       text("Hello World",x[i],y[i])

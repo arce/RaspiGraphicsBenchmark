@@ -35,6 +35,7 @@ function draw()
   else
     t[m] = time()
     background(255)
+    noStroke()
     for i=0,n-1 do
       fill(c[i])
       arc(x[i],y[i],r[i],r[i],0, PI)

@@ -38,6 +38,7 @@ function draw()
   else
     t[m] = time()
     background(255)
+    noFill()
     for i=0,n-1 do
       stroke(c[i])
       line(x1[i],y1[i],x2[i],y2[i])

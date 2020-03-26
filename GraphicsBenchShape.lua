@@ -51,6 +51,7 @@ function draw()
   else
     t[m] = time()
     background(255)
+    noFill()
     for i=0,n-1 do
       stroke(c[i])
       shape(s,x[i],y[i])

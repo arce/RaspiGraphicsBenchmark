@@ -38,6 +38,7 @@ function draw()
   else
     t[m] = time()
     background(255)
+    noStroke()
     for i=0,n-1 do
       fill(c[i])
       rect(x[i],y[i],w[i],h[i])
