@@ -10,7 +10,7 @@ int yr = 1080;
 long t[];
 
 void setup() {
-  size(1920,1080);
+  size(1920,1080,P3D);
   if (args != null) {
 	  n = int(args[0]);
   }

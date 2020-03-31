@@ -15,7 +15,7 @@ local t
 function setup()
   size(xr,yr)
   if (args[1] ~= null) then
-	n = args[1]
+	  n = args[1]
   end
   local f = createFont("default.ttf", 12)
   textFont(f)

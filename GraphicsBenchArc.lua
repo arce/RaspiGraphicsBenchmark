@@ -10,10 +10,11 @@ local l = 10
 local xr = 1920
 local yr = 1080
 local t
+
 function setup()
   size(xr,yr)
   if (args[1] ~= null) then
-	n = args[1]
+	  n = args[1]
   end
   x = Array()
   y = Array()
@@ -37,7 +38,7 @@ function draw()
     noFill()
     for i=0,n-1 do
       stroke(c[i])
-      arc(x[i],y[i],r[i],r[i],0,PI)
+      arc(x[i],y[i],r[i],0,PI)
     end
   end
 end

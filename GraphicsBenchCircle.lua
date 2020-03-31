@@ -25,7 +25,7 @@ function setup()
     x[i] = math.random()*xr
     y[i] = math.random()*yr
     r[i] = math.random()*xr/10
-    c[i] = color(math.random()*255,math.random()*255,math.random()*255)s
+    c[i] = color(math.random()*255,math.random()*255,math.random()*255)
   end
 end
 
