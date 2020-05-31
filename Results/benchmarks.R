@@ -1,0 +1,6 @@
+library(plyr)
+library(ggplot2)
+dat = read.csv("/Users/armando/Desktop/Benchmark/benchmark.csv",header=TRUE)
+dat_msecs = ddply(dat,c("env","type","n"),summarize, msecs_mean = mean(msecs))
+p1 = ggplot(dat_msecs, aes(x=n, y=msecs_mean, colour=env)) + geom_line()
+p1 + facet_wrap(. ~ type, ncol = 2)
