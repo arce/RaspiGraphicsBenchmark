@@ -45,7 +45,6 @@ rm salida_lua.csv
 ../bin/Diököl GraphicsBenchFillRect.lua 100000 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillRect.lua 500000 >> salida_lua.csv
 
-
 ../bin/Diököl GraphicsBenchFillShape.lua 100 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillShape.lua 500 >> salida_lua.csv
 ../bin/Diököl GraphicsBenchFillShape.lua 1000 >> salida_lua.csv
